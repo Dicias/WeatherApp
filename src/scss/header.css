@@ -1,0 +1,48 @@
+.nav img{
+    max-width: 10%;
+    height: auto;
+}
+
+.nav{
+    background-color: #EFEFEF;
+    display: flex;
+    height: 15vh;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items:center ;
+    }
+
+
+.logo-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0;
+    margin: 0 10px;
+    width: 75vw;
+    height: 15vh;
+    background-color: #EFEFEF;
+    font-size: 1.5rem;
+}
+
+.weather-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffc800;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 10px;
+    margin: 0 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1E212B;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 20vw;
+    height: 10vh;
+}
+
+.tsunami-ico{
+    font-size: 80px;
+}

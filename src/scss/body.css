@@ -17,9 +17,9 @@
     width: 55vw;
     height: 55vh;
     border-radius: 24px;
+    border: 3px solid #1e212b;
 }
 .weather-actual{
-    background-color: #ff8811;
     display: flex;
     flex-direction:row;
     justify-content: space-around;
@@ -30,6 +30,7 @@
     width: 100%;
     height: 25vh;
     border-radius:24px ;
+    color: white;
 }
 
 .img-container{
@@ -75,6 +76,7 @@
     align-items: center;
     width: 20vw;
     height: 55vh;
+    border: 2px solid #1e212b;
     border-radius: 14px;
 }
 
@@ -97,3 +99,30 @@
     opacity: 0.8;
 }
 
+/* Animation */
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+ @-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  

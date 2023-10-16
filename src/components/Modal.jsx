@@ -2,15 +2,16 @@ import '../scss/modal.css'
 import '../scss/header.css'
 import {BsTsunami} from "react-icons/bs"
 import React, { useState } from 'react';
-import Repartidor from './Repartidor';
 const Modal = (props) => {
   const { clima } = props
   const {weatherData} = props
   const [isOpen, setIsOpen] = useState(false);
-  const [citySelect, setCitySelect] = useState('buscar')
+  const [citySelect, setCitySelect] = useState('')
 //  console.log(clima, 'desde modal')
 
-
+if(!props){
+  return 
+}
 
   const openModal = () => {
     setIsOpen(true);
@@ -28,7 +29,7 @@ const Modal = (props) => {
 
   return (
     <div>
-      <button className='weather-button' onClick={openModal}>{citySelect.nombre_ciudad} <BsTsunami className='tsunami-ico' /></button>
+      <button className='weather-button' onClick={openModal}>{citySelect.nombre_ciudad || 'Selecciona'} <BsTsunami className='tsunami-ico' /></button>
 
       {isOpen && (
         <div className="modal">

@@ -1,7 +1,7 @@
 import '../scss/carrusel.css'
 const Carrusel = (props) =>{
     const {city} = props;
-    console.log(city, 'desde carrusel')
+    //console.log(city, 'desde carrusel')
     return(
         <div className="carrusel-container">
                 <article>
